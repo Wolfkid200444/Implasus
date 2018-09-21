@@ -3,7 +3,7 @@
    "description": "A Minecraft: Bedrock + Windows 10 Edition server software in PHP",
    "type": "project",
    "homepage": "https://github.com/ImpladeDeveloped/Implasus",
-   "license": "LGPL-3.0"
+   "license": "LGPL-3.0",
    "require": {
       "php": ">=7.2.0",
       "php-64bit": "*",
