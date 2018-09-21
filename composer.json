@@ -1,0 +1,7 @@
+{
+   "name": "impladedeveloped/implasus",
+   "description": "A Minecraft: Bedrock + Windows 10 Edition server software in PHP",
+   "type": "project",
+   "homepage": "https://github.com/ImpladeDeveloped/Implasus",
+   "license": "LGPL-3.0"
+}
