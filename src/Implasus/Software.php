@@ -17,7 +17,7 @@
 * --==[×]==--
 *
 * > Team: ImpladeDeveloped
-* > Link: http://github.com/ImpladeDeveloped/Implactor
+* > Link: http://github.com/ImpladeDeveloped
 *
 *
 **/
@@ -38,7 +38,7 @@ namespace Implasus {
     use pocketmine\SetupWizard;
     
     const SOFTWARE_NAME = "Implasus";
-    const API_VERSION = "5.0.0";
+    const API_VERSION = "4.0.0";
     const DEVELOPMENT_BUILD = true;
     const BUILD_NUMBER = 0;
     const MIN_PHP_VERSION = "7.2.0";
