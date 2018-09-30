@@ -31,16 +31,47 @@ use Implasus\utils\Internet;
 
 class SetupWizard {
   
-  public const DEFAULT_SERVER_NAME = "§f My §b" . \Implasus\NAME . "§f Server §r";
+  public const DEFAULT_SERVER_NAME = "§f In §b" . \Implasus\SOFTWARE_NAME . "§f Server §r";
   public const DEFAULT_SERVER_PORT = 19132;
   public const DEFAULT_SERVER_GAMEMODE = 0;
   public const DEFAULT_PLAYER_SLOTS = 50;
 	
-  private $lang;
+  private $language;
 	
   public function onConstruct() {
   }
- 
-/* Starting to create all for wizard! */
+  
+  public function run() : bool{
+      $this->inMessage(\pocketmine\SOFTWARE_NAME . "'s Wizard setup!");
+      try{
+          $languages = Language::getLanguageList();
+      }catch(LanguageMissing $eco){
+          $this->getError("No language files found, please use provided builds or clone the repository recursively to add.");
+          return false;
+      }
+      $this->inMessage("Please select a language for the software terminal.");
+      foreach($languages as $shorter => $native){
+          $this->inLine(" $native => $shorter");
+      }do{
+          $language = strtolower($this->getServerInput("Language", "english"));
+          if(!isset($languages[$language])){
+             $this->getError("Language not found in software.");
+             $language = null;
+           }
+      }while($language === null);
+      $this->language = new Language($language);
+      $this->inMessage($this->language->get("selected_language"));
+      }
+      if(strtolower($this->getServerInput($this->language->get("skip_the_installer"), "n", "y/N")) === "y"){
+         return true;
+      }
+      $this->inLine();
+      $this->welcomer();
+      $this->generateSoftwareConfig();
+      $this->generateServerFiles();
+      $this->NetworkServer();
+      $this->endWizardSetup();
+      return true;
+   }
 	
 }
