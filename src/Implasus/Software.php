@@ -41,6 +41,23 @@ namespace Implasus {
     const API_VERSION = "4.0.0";
     const DEVELOPMENT_BUILD = true;
     const BUILD_NUMBER = 0;
-    const MIN_PHP_VERSION = "7.2.0";
+    const MINIMUM_PHP_VERSION = "7.2.0";
     
+    function critical_error($inMessage){
+		echo "[ERROR] $inMessage" . PHP_EOL;
+	}
+	
+	function check_platform_dependencies(){
+		if(version_compare(MINIMUM_PHP_VERSION, PHP_VERSION) > 0){
+			return [
+				\Implasus\SOFTWARE_NAME . " is requires the PHP >= " . MINIMUM_PHP_VERSION . ", but you're currently have PHP " . PHP_VERSION . "."
+			];
+		}
+		$inMessages = [];
+		if(PHP_INT_SIZE < 8){
+			$inMessages[] = "Running tje " . \Implasus\SOFTWARE_NAME . " with 32-bit PHP system is no longer supported. Please upgrade to a 64-bit system, or use a 64-bit PHP binary.";
+		}
+		if(php_sapi_name() !== "cli"){
+			$inMessages[] = "You must run the " . \Implasus\SOFTWARE_NAME . " using the mode of CLI.";
+        }
 }
