@@ -17,7 +17,7 @@
 * --==[×]==--
 *
 * > Team: ImpladeDeveloped
-* > Link: http://github.com/ImpladeDeveloped/Implactor
+* > Link: http://github.com/ImpladeDeveloped
 *
 *
 **/
