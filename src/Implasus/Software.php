@@ -55,7 +55,7 @@ namespace Implasus {
         }
         $inMessages = [];
         if(PHP_INT_SIZE < 8){
-            $inMessages[] = "Running tje " . \Implasus\SOFTWARE_NAME . " with 32-bit PHP system is no longer supported. Please upgrade to a 64-bit system, or use a 64-bit PHP binary.";
+            $inMessages[] = "Running the " . \Implasus\SOFTWARE_NAME . " with 32-bit PHP system is no longer supported. Please upgrade to a 64-bit system, or use a 64-bit PHP binary.";
         }
         if(php_sapi_name() !== "cli"){
             $inMessages[] = "You must run the " . \Implasus\SOFTWARE_NAME . " using the mode of CLI.";
