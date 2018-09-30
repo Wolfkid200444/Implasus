@@ -42,7 +42,7 @@ class SetupWizard {
   }
   
   public function run() : bool{
-      $this->inMessage(\pocketmine\SOFTWARE_NAME . "'s Wizard setup!");
+      $this->inMessage(\Implasus\SOFTWARE_NAME . "'s Wizard setup!");
       try{
           $languages = Language::getLanguageList();
       }catch(LanguageMissing $eco){
