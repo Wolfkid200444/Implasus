@@ -15,3 +15,11 @@ There are a very wide range of already-written plugins available which you can u
 
 Yes you can! Contributions are welcomed provided that they comply with our [Contributing Guidelines]. Please ensure you read the relevant sections of the guidelines carefully before making a Pull Request or opening an Issue.
 
+## Lincesing Information
+##
+##Lincesing Information
+#
+##
+##Lincesing Information
+
+
