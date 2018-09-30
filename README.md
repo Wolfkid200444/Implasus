@@ -9,13 +9,14 @@ Head over to our Discord Server to talk a human
 
 **Plugins**
 
-There are a very wide range of already-written plugins available which you can use to customise your server. Check out [Poggit](https://poggit.pmmp.io), or just search GitHub.
-
-**Can i contribute**
+Currently not available as because it not supported any plugins from PocketMine-MP or forked repos.
+I recommend you to not using this development software until it's done.
+ 
+**Can I Contribute the repo?**
 
 Yes you can! Contributions are welcomed provided that they comply with our [Contributing Guidelines]. Please ensure you read the relevant sections of the guidelines carefully before making a Pull Request or opening an Issue.
 
-## Lincesing Information
+## License Information
 ```
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -31,4 +32,6 @@ You should have received a copy of the GNU Lesser General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ```
 
-ImpladeDeveloped/Implasus are not affiliated with Mojang. All brands and trademarks belong to their respective owners. Implasus is not a Mojang-approved software, nor is it associated with Mojang
+>
+> **ImpladeDeveloped/Implasus are not affiliated with Mojang. All brands and trademarks belong to their respective owners. Implasus is not a Mojang-approved software, nor is it associated with Mojang.**
+>
