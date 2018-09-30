@@ -5,7 +5,7 @@ __A Minecraft: Bedrock + Windows 10 Edition Server Software in PHP__
 
 **Support, Help, FAQa**
 
-Head over to our Discord Server to talk a human
+Head over to our Discord Server to talk with a human [HERE](https://discord.gg/RFHeyFa)
 
 **Plugins**
 
